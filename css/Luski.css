@@ -1,0 +1,229 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(243, 119, 53) 3px solid;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+    header a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 14px;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+header .current a {
+    color: rgb(243, 119, 53);
+    font-weight: bold;
+}
+
+.top {
+    padding-top: 150px;
+    overflow: visible;
+    box-sizing: border-box;
+    padding-bottom: 270px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, .2));
+    width: 100%;
+}
+
+    .top h1 {
+        font-size: 60px;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 11px;
+        color: #fefefe;
+    }
+
+    .top hr {
+        max-width: 500px;
+        height: 1px;
+        border: 0;
+        background: linear-gradient(to right, #383f46 0, #737a81 50%, #383f46 100%);
+    }
+
+h1 {
+    font-weight: 300;
+    color: white;
+}
+
+.top_desc {
+    font-weight: 300;
+    margin-top: 15px;
+    color: #c7cdd3;
+    margin-bottom: 69px;
+}
+
+.top_img:before {
+    position: absolute;
+    left: 50%;
+    visibility: inherit;
+    width: 760px;
+    height: 550px;
+    margin-top: -110px;
+    margin-left: -380px;
+    content: '';
+    transform-origin: center 80% 0;
+    animation: rotate .5s ease-out;
+    background: url(https://www.JacobTech.com/Assets/Luski/WebPage/showcase_background.png);
+    background-size: 760px 550px;
+    box-shadow: rgba(0, 0, 0, .5) 0 10px 60px;
+    animation-fill-mode: forwards;
+}
+
+.top_img {
+    transition: all .5s ease;
+}
+
+.top_img {
+    animation: fadein .6s;
+}
+
+.top_img {
+    animation-duration: 0.16s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: matrix3d(.9, 0, .00, 0, .00, .9, .00, -.0004, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    to {
+        transform: matrix3d(.9, 0, .00, 0, .00, .9, .00, -.0008, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+div {
+    display: block;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    display: inline-block;
+    width: 312px;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 1.15em 10px;
+    cursor: pointer;
+    transition: all .6s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #F37735;
+    border-radius: 3px;
+    background: #F37735;
+    cursor: no-drop;
+}
+
+.features {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    padding-top: 210px;
+}
+
+.features_list {
+    padding: 3% 10% 5% 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.feature_item {
+    font-size: 18px;
+    color: #c7cdd3;
+    font-weight: 300;
+    display: inline-block;
+    width: 130px;
+    margin: 0 auto 35px;
+    padding-top: 130px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.privacy {
+    background-image: url(https://www.JacobTech.com/Assets/Luski/WebPage/lock.png);
+}
+
+.theme_editor {
+    background-image: url(https://www.JacobTech.com/Assets/Luski/WebPage/theme_editor.png);
+}
+
+footer {
+    color: #c7cdd3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, .2));
+}
+
+    footer h5 {
+        font-weight: 300;
+    }
+
+a#Luski {
+    color: dodgerblue;
+}
+
